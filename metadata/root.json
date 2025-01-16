@@ -1,0 +1,64 @@
+{
+ "signatures": [
+  {
+   "keyid": "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2026-01-16T14:58:19Z",
+  "keys": {
+   "43b0f3f1f5b437187af7e4f4297eb02d1b8cdeb3b509c7e228b5883c79928afa": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/MCieplySW/tuf-on-ci-non-ghe-3/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   },
+   "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAElBCrLmuegWABPI8CwFWqxIXhq2eM\n6PrEU+vXopg6HW9xjnhblATNHcum+sN18/5tvTX/eYCiWsJLPX9mnzkHyQ==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@mcieplysw"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "43b0f3f1f5b437187af7e4f4297eb02d1b8cdeb3b509c7e228b5883c79928afa"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "43b0f3f1f5b437187af7e4f4297eb02d1b8cdeb3b509c7e228b5883c79928afa"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
