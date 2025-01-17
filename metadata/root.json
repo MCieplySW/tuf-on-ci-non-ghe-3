@@ -1,0 +1,67 @@
+{
+ "signatures": [
+  {
+   "keyid": "0d226393c5315754c8ec9092733e29ec1573ce1c338bf400026a33b2c3f53ab7",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2026-01-17T10:38:01Z",
+  "keys": {
+   "0d226393c5315754c8ec9092733e29ec1573ce1c338bf400026a33b2c3f53ab7": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "michal.cieply@solarwinds.com",
+     "issuer": "https://github.com/login/oauth"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-keyowner": "@mcieplysw"
+   },
+   "43b0f3f1f5b437187af7e4f4297eb02d1b8cdeb3b509c7e228b5883c79928afa": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/MCieplySW/tuf-on-ci-non-ghe-3/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "0d226393c5315754c8ec9092733e29ec1573ce1c338bf400026a33b2c3f53ab7"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "43b0f3f1f5b437187af7e4f4297eb02d1b8cdeb3b509c7e228b5883c79928afa"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "0d226393c5315754c8ec9092733e29ec1573ce1c338bf400026a33b2c3f53ab7"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "43b0f3f1f5b437187af7e4f4297eb02d1b8cdeb3b509c7e228b5883c79928afa"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
