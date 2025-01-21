@@ -1,64 +1,8 @@
 {
  "signatures": [
   {
-   "bundle": {
-    "mediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
-    "messageSignature": {
-     "messageDigest": {
-      "algorithm": "SHA2_256",
-      "digest": "uDBj8N4tnDCnueuAIs2TSpu+TuyU5TDNDp92H106KkI="
-     },
-     "signature": "MEUCIQC29qNiV0HuT9IAMbIL08E/q8662xtHHJUoVsvAyfQ6gAIgJOFUo3QzN9ZjFWvXkNBFqKrES0B0uVeuuJlmC/b78Tk="
-    },
-    "verificationMaterial": {
-     "certificate": {
-      "rawBytes": "MIIC2jCCAmGgAwIBAgIUaKNedLH0o8+MIc15vlH7+P0IfPEwCgYIKoZIzj0EAwMwNzEVMBMGA1UEChMMc2lnc3RvcmUuZGV2MR4wHAYDVQQDExVzaWdzdG9yZS1pbnRlcm1lZGlhdGUwHhcNMjUwMTIxMTQxNDI5WhcNMjUwMTIxMTQyNDI5WjAAMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYgWuCTuZCBQp+WamL3DHXXKJytJPLYg7IedNtfXDakqkfsI3mU2LU4s9wpAzHjfa+rpYD0H2aJXaqLa1tQkyAaOCAYAwggF8MA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAdBgNVHQ4EFgQUg0HPvRwgvEO6eX1MuZ6RxWIlsMMwHwYDVR0jBBgwFoAU39Ppz1YkEZb5qNjpKFWixi4YZD8wKgYDVR0RAQH/BCAwHoEcbWljaGFsLmNpZXBseUBzb2xhcndpbmRzLmNvbTAsBgorBgEEAYO/MAEBBB5odHRwczovL2dpdGh1Yi5jb20vbG9naW4vb2F1dGgwLgYKKwYBBAGDvzABCAQgDB5odHRwczovL2dpdGh1Yi5jb20vbG9naW4vb2F1dGgwgYoGCisGAQQB1nkCBAIEfAR6AHgAdgDdPTBqxscRMmMZHhyZZzcCokpeuN48rf+HinKALynujgAAAZSJNvp6AAAEAwBHMEUCIHlpC/y0lU89IzxSr/nJhSKvCaOhGYGxdvJcBa7BMeeHAiEA7aMefTd0KuZxGKQ4/7wkmxVZFwOBYhE2hRYrIY2pTvgwCgYIKoZIzj0EAwMDZwAwZAIwEiWO8ODnVXqzRFvdYB+ddBONeZZEXDX7DPRVyfinzoyhpBpBaAMcMlUgF3WU51v2AjAuwfzK71yhbOHETdP51F8pQLdyFTa5xGT16mRWoNMhlbBicsRHafMZjXToGGxGLy4="
-     },
-     "timestampVerificationData": {},
-     "tlogEntries": [
-      {
-       "canonicalizedBody": "eyJhcGlWZXJzaW9uIjoiMC4wLjEiLCJraW5kIjoiaGFzaGVkcmVrb3JkIiwic3BlYyI6eyJkYXRhIjp7Imhhc2giOnsiYWxnb3JpdGhtIjoic2hhMjU2IiwidmFsdWUiOiJiODMwNjNmMGRlMmQ5YzMwYTdiOWViODAyMmNkOTM0YTliYmU0ZWVjOTRlNTMwY2QwZTlmNzYxZjVkM2EyYTQyIn19LCJzaWduYXR1cmUiOnsiY29udGVudCI6Ik1FVUNJUUMyOXFOaVYwSHVUOUlBTWJJTDA4RS9xODY2Mnh0SEhKVW9Wc3ZBeWZRNmdBSWdKT0ZVbzNRek45WmpGV3ZYa05CRnFLckVTMEIwdVZldXVKbG1DL2I3OFRrPSIsInB1YmxpY0tleSI6eyJjb250ZW50IjoiTFMwdExTMUNSVWRKVGlCRFJWSlVTVVpKUTBGVVJTMHRMUzB0Q2sxSlNVTXlha05EUVcxSFowRjNTVUpCWjBsVllVdE9aV1JNU0RCdk9DdE5TV014Tlhac1NEY3JVREJKWmxCRmQwTm5XVWxMYjFwSmVtb3dSVUYzVFhjS1RucEZWazFDVFVkQk1WVkZRMmhOVFdNeWJHNWpNMUoyWTIxVmRWcEhWakpOVWpSM1NFRlpSRlpSVVVSRmVGWjZZVmRrZW1SSE9YbGFVekZ3WW01U2JBcGpiVEZzV2tkc2FHUkhWWGRJYUdOT1RXcFZkMDFVU1hoTlZGRjRUa1JKTlZkb1kwNU5hbFYzVFZSSmVFMVVVWGxPUkVrMVYycEJRVTFHYTNkRmQxbElDa3R2V2tsNmFqQkRRVkZaU1V0dldrbDZhakJFUVZGalJGRm5RVVZaWjFkMVExUjFXa05DVVhBclYyRnRURE5FU0ZoWVMwcDVkRXBRVEZsbk4wbGxaRTRLZEdaWVJHRnJjV3RtYzBremJWVXlURlUwY3psM2NFRjZTR3BtWVN0eWNGbEVNRWd5WVVwWVlYRk1ZVEYwVVd0NVFXRlBRMEZaUVhkblowWTRUVUUwUndwQk1WVmtSSGRGUWk5M1VVVkJkMGxJWjBSQlZFSm5UbFpJVTFWRlJFUkJTMEpuWjNKQ1owVkdRbEZqUkVGNlFXUkNaMDVXU0ZFMFJVWm5VVlZuTUVoUUNuWlNkMmQyUlU4MlpWZ3hUWFZhTmxKNFYwbHNjMDFOZDBoM1dVUldVakJxUWtKbmQwWnZRVlV6T1ZCd2VqRlphMFZhWWpWeFRtcHdTMFpYYVhocE5Ga0tXa1E0ZDB0bldVUldVakJTUVZGSUwwSkRRWGRJYjBWallsZHNhbUZIUm5OTWJVNXdXbGhDYzJWVlFucGlNbmhvWTI1a2NHSnRVbnBNYlU1MllsUkJjd3BDWjI5eVFtZEZSVUZaVHk5TlFVVkNRa0kxYjJSSVVuZGplbTkyVERKa2NHUkhhREZaYVRWcVlqSXdkbUpIT1c1aFZ6UjJZakpHTVdSSFozZE1aMWxMQ2t0M1dVSkNRVWRFZG5wQlFrTkJVV2RFUWpWdlpFaFNkMk42YjNaTU1tUndaRWRvTVZscE5XcGlNakIyWWtjNWJtRlhOSFppTWtZeFpFZG5kMmRaYjBjS1EybHpSMEZSVVVJeGJtdERRa0ZKUldaQlVqWkJTR2RCWkdkRVpGQlVRbkY0YzJOU1RXMU5Xa2hvZVZwYWVtTkRiMnR3WlhWT05EaHlaaXRJYVc1TFFRcE1lVzUxYW1kQlFVRmFVMHBPZG5BMlFVRkJSVUYzUWtoTlJWVkRTVWhzY0VNdmVUQnNWVGc1U1hwNFUzSXZia3BvVTB0MlEyRlBhRWRaUjNoa2RrcGpDa0poTjBKTlpXVklRV2xGUVRkaFRXVm1WR1F3UzNWYWVFZExVVFF2TjNkcmJYaFdXa1ozVDBKWmFFVXlhRkpaY2tsWk1uQlVkbWQzUTJkWlNVdHZXa2tLZW1vd1JVRjNUVVJhZDBGM1drRkpkMFZwVjA4NFQwUnVWbGh4ZWxKR2RtUlpRaXRrWkVKUFRtVmFXa1ZZUkZnM1JGQlNWbmxtYVc1NmIzbG9jRUp3UWdwaFFVMWpUV3hWWjBZelYxVTFNWFl5UVdwQmRYZG1la3MzTVhsb1lrOUlSVlJrVURVeFJqaHdVVXhrZVVaVVlUVjRSMVF4Tm0xU1YyOU9UV2hzWWtKcENtTnpVa2hoWmsxYWFsaFViMGRIZUVkTWVUUTlDaTB0TFMwdFJVNUVJRU5GVWxSSlJrbERRVlJGTFMwdExTMEsifX19fQ==",
-       "inclusionPromise": {
-        "signedEntryTimestamp": "MEUCIFtXmBBEBsOonS/Li5t1vPEJjzuj9PmAQ9lSi5vcp9pVAiEAynExph8rL8EA2bk5EoNhEr83BpkWTOzhi1Bkn13VGNo="
-       },
-       "inclusionProof": {
-        "checkpoint": {
-         "envelope": "rekor.sigstore.dev - 1193050959916656506\n42229167\nytuyMbJH2oVMo06VxQBUvMssD2qr/glLV7fNFSRImBw=\n\n\u2014 rekor.sigstore.dev wNI9ajBFAiEAij0fqBhvbwryvO14+KVaWgXB9Q6Mp6QZNbMqTNurc8MCIFOoX4J4zltfPtWyZzQFGiehrJuNFckBwnHCnD6UsZw6\n"
-        },
-        "hashes": [
-         "xP1wsTXpt4K9eUan1i2a3ngKWvoiZEAGccQT79sgGMU=",
-         "r6BoyTjllqCFNCuduHnSAwNnCKrupmXdQ3cxMQVjgxM=",
-         "MBnG/wQP26w5TqXWbMpA4SXP8J8EwuuDufaIq4sjnIo=",
-         "EuMn0pHmJgrQY9Qjb0L0T6QI9UOIJioXw4Xx1qc6ZwI=",
-         "T0aDlA84Nurkt9HAo6T+OHMy1QSRaFpWsUhrjafJqcc=",
-         "PTCXVknp6CKqpkCUVESsBprgzYVpQlTMTcnr/bP6JkE=",
-         "No/F8G5fY88l/oTpH+q/RHwBLbdOlXszc2CdPwBIreI=",
-         "Y9DTjFj/SHyJG+yPApI4VlEPSQ6ZXVVs99wrTDn83W8=",
-         "ntZ5pZUU7jjyf6BWSH/GJPdB3v/QWHxSd/Ji4po/QMc=",
-         "tJk2Wa+dycdUr1luxZdD/A/kvzjCIjXYaioHzChBs28=",
-         "7Ms8nENaWrHKdr27lNX3fGLAIiLvanwC17DYkfS8Vzw=",
-         "jU9+tgjTIKUYGeU7T7RjqyL+F+gFV9tCdwX2GZ1UtQs=",
-         "vemyaMj0Na1LMjbB/9Dmkq8T+jAb3o+yCESgAayUABU="
-        ],
-        "logIndex": "42229166",
-        "rootHash": "ytuyMbJH2oVMo06VxQBUvMssD2qr/glLV7fNFSRImBw=",
-        "treeSize": "42229167"
-       },
-       "integratedTime": "1737468869",
-       "kindVersion": {
-        "kind": "hashedrekord",
-        "version": "0.0.1"
-       },
-       "logId": {
-        "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
-       },
-       "logIndex": "164133428"
-      }
-     ]
-    }
-   },
    "keyid": "0d226393c5315754c8ec9092733e29ec1573ce1c338bf400026a33b2c3f53ab7",
-   "sig": "MEUCIQC29qNiV0HuT9IAMbIL08E/q8662xtHHJUoVsvAyfQ6gAIgJOFUo3QzN9ZjFWvXkNBFqKrES0B0uVeuuJlmC/b78Tk="
+   "sig": ""
   }
  ],
  "signed": {
@@ -111,10 +55,24 @@
      ],
      "terminating": true,
      "threshold": 1
+    },
+    {
+     "keyids": [
+      "43b0f3f1f5b437187af7e4f4297eb02d1b8cdeb3b509c7e228b5883c79928afa"
+     ],
+     "name": "online-role",
+     "paths": [
+      "online-role/*",
+      "online-role/*/*",
+      "online-role/*/*/*",
+      "online-role/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
     }
    ]
   },
-  "expires": "2026-01-21T14:14:19Z",
+  "expires": "2026-01-21T14:48:33Z",
   "spec_version": "1.0.31",
   "targets": {},
   "version": 3,
